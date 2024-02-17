@@ -1,0 +1,87 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}}
+{\colortbl ;\red255\green255\blue0;\red255\green0\blue0;\red0\green255\blue255;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs24\lang9 Objective\par
+The Pfizer Biopharmaceutical, Patient and Center for Digital Innovation Creation\par
+Center is on a journey to adapt to the changing needs of the commercial business we\par
+support. Over the course of the last few years our demand has grown exponentially\par
+along with the complexity of the demand. We have tripled our footprint of resources\par
+and delivered high caliber digital solutions.\par
+While demand has grown, so has the cyber security risk. As we expand our resource\par
+footprint, it becomes more \highlight1 critical to ensure all talent working in our tools has a\par
+baseline of capabilities that meet Pfizer standards\highlight0 . We expect a solution that will\par
+\highlight1\fs32 provide:\par
+\highlight0\f1\fs24\bullet  A \cf2 web-based solution providing full visibility of internal and external staff\par
+\cf0 supporting our business area including personal information and reporting\par
+lines, projects they are supporting, role on each project, and certification\par
+history.\par
+\bullet  \cf2 Ensure the web interface is simple and easy to use (UI/UX)\par
+\cf0\bullet  \cf2 Easy management of data being tracked (add, remove, bulk changes, etc.)\par
+\cf0\bullet  \cf2 Ensure data from the solution can be saved in a database to allow Pfizer use in\par
+the future\f0\lang1033  (database)\f1\lang9\par
+\cf0\bullet  \cf2 Ability to share the resources information to other systems using REST-APIs\par
+\cf0 Business Objective: Provide transparency to full workforce details supporting our\par
+business to ensure work class standards are\f0\lang1033  met.\par
+\highlight1\fs32 IT Objective: Improve data available to drive automations and decisions associated with resourcing.\par
+\par
+\par
+\par
+\par
+TUBS\tab What PPI or professional information needs to be visible? And to whom?\~\~\~\highlight0\tab\tab\cf2 Fields from the RFP Appendix should be visible, in addition to the new metadata fields Role, Assigned Project and any other you can think of. Any data in the system should be visible.\par
+\cf0\highlight1 TUBS\tab Who has the ability to enter credentials, edit, update, or delete?\~\tab\highlight0\tab\cf2 People with "Admin" rights should be able to add other users. Once the user is loggued in, they should be able to add/edit/delete any records. \par
+\cf0\highlight1 TUBS\tab What are Pfizer's Standards in terms of security?\tab\highlight0\tab\cf2 For this app, the UI should be protected by basic authentication (username and password), for the API endpoints they should be protected using OAuth2 (bearer token) with a Client ID and Secret \cf0 key.\par
+\highlight1 TUBS\tab During the kickoff meeting Martin mentioned that there were some security considerations when using APIs. Can you elaborate about any security concerns we should keep in mind  in the design and development of this solution?\highlight0\tab\cf2 N/A\tab See response #4 above.\par
+\cf0\highlight1 TUBS\tab When can we expect to receive a style guide for the solution?\highlight0\tab\tab\cf2 We will provide a PowerPoint tempalte with the Corporate branding. \par
+\cf0 TUBS\tab How does data on talent currently move through the organization?\~\tab\tab\cf2 From an HR csv file to this app to end-users.\par
+\cf0 TUBS\tab We are expecting \highlight3\fs36 that there are just two users, managers and super admins.\fs32  ( no employees)\highlight0 Is there any desire to have employees maintain their own profiles over time as well?\tab\tab Not at this time.\par
+All teams\tab "Proposed engagement model to implement the project" Please clarify what you are looking for here.\~\tab 3.2.4\tab Are you going to \highlight1 use Agile\highlight0 , Waterfall, how are you planning to deliver the project scope?\par
+All teams\tab\ldblquote Profile of personnel to be deployed\rdblquote  Please clarify what this is referring to. Are you Didier Le Tienseeking detail on how the intended users will engage with this solution?\~\tab 3.2.4\tab Who are your employees that will work on this project with their role and profile?\par
+All teams\tab\ldblquote Project related productivity and process maturity\rdblquote  Please provide more clarity here. Is this a request to see the intended timeline?\~\tab 3.2.4\tab What are your Project Management processes?\par
+All teams\tab\ldblquote Capabilities\rdblquote  - Is this a list of features and functions of this solution or our company capabilities?\tab 3.2.4\tab What capabilities are you planning to deliver?\par
+All teams\tab\ldblquote Innovation in related process and technology\rdblquote  Please clarify what you are seeking here.\tab 3.2.4\tab Is there any "innovation" you are proposing, such as the use of AI for some of the capabilities you are planning to deliver?\par
+Kaleidescope\tab Who are the primary users of the system, and what roles do they play within Pfizer? \tab Requirements\tab Primary Users are Resource Managers for their teams.\par
+Kaleidescope\tab Are there specific user roles or access levels that need to be defined? \tab Requirements\tab 2 primary roles (Administrators and Managers)\par
+Kaleidescope\tab What information do different user roles need access to within the system? \tab Requirements\tab Administrators can do everything, in addition to give Managers access. Managers can add/edit/delete related data.\par
+Kaleidescope\tab How often is the data expected to be updated or modified? \tab Requirements\tab The HR data feed is a monthly process, Managers will update data daily.\par
+Kaleidescope\tab Are there any specific requirements for bulk data changes or imports?\tab Requirements\tab Yes, an HR feed with employees data will need to be imported on a monthly basis.\par
+Kaleidescope\tab What resources are available for this project (e.g., data, tools, personnel)? \tab Resources\tab Not sure I understand this question.\par
+Kaleidescope\tab Can you provide us with how HR currently receives/sends data? \tab Resources\tab Yes, we will provide a sample CSV file with the layout.\par
+Kaleidescope\tab I would edit this to say the following: Section 5.1 provides insight into the data that is stored in the databases. When end users utilize this system are they familiar with the label supplied or will we need to have labels that are laymen? \tab Resources\tab Labels should use "friendly business names", think of the end-users.\par
+Kaleidescope\tab What are the universal titles you would like to see the software provide? \tab Resources\tab We will provide a list of "Universal Job Tieles/Roles".\par
+Kaleidescope\tab What type of database does Pfizer currently use, and is there a preference for integration with a specific database system?\tab Resources\tab Use MySQL 8.x\par
+Kaleidescope\tab Are there any potential risks or challenges that you foresee with this project? \tab Security/Risks: \tab The HR file import process has to be accurate. For example, if a resource is in the file in January but NOT in February, this resource should be set as inactive within the app.\par
+Kaleidescope\tab What cybersecurity standards and compliance requirements need to be adhered to in the design and implementation of the system?\tab Security/Risks: \tab For this app, the UI should be protected by basic authentication (username and password), for the API endpoints they should be protected using OAuth2 (bearer token) with a Client ID and Secret key.\par
+Kaleidescope\tab Has any work been done on this project before? If so, can you provide details? \tab Previous Work: \tab No, we are starting from scratch, we've only identified the metadata we want to track with this app.\par
+Kaleidescope\tab How do roles and levels of the employee interact with each other?\tab Previous Work: \tab Employees and resources reports into a Manager, which is identified in the HR file.\par
+Kaleidescope\tab What're the names of the positions within Pfizer? \tab Previous Work: \tab Not sure I undertand, please clarify?\par
+Kaleidescope\tab Can we test the product with users/pfizer employees? \tab Previous Work: \tab No, we will provide dummy data for testing purposes.\par
+Kaleidescope\tab Who has access and doesn\rquote t have access to data? \tab Previous Work: \tab Administrators and Managers having access to the app should have access to the data.\par
+Kaleidescope\tab Are there any specific style guide design preferences? \tab Web Interface: \tab We will provide a PowerPoint tempalte with the Corporate branding. \par
+Kaleidescope\tab Are there specific data formats or protocols that must be supported for API communication?\tab\f1\enspace REST-API: \tab REST APIs is our standard using proper HTTP protocol.\par
+Kaleidescope\tab What specific reporting requirements exist for tracking workforce details, project statuses, and resource utilization? \tab Reporting: \tab Reporting and Analytics are out of scope for this RFP.\par
+Kaleidescope\tab How is the expected growth of resources and data considered in the system's scalability requirements? \tab Scalability: \tab About 100 end-users with 4000 individual resources\par
+Kaleidescope\tab What specific automations or decisions are expected to be driven by the data available in the system? \tab Other: \tab The only automation and rules required are going to be around the HR cvs file import process. We will provide the basic processing logic around that.\par
+Kaleidescope\tab Are there any specific business rules or logic that should be implemented for decision support?\tab Other: \tab See answer #35 above.\par
+MSI\tab Cyber security was mentioned at the kickoff meeting, please clarify what the security risks would be. Specifically, more on the API portion.\~\tab\tab For this app, the UI should be protected by basic authentication (username and password), for the API endpoints they should be protected using OAuth2 (bearer token) with a Client ID and Secret key.\par
+MSI\tab In section 2.1.1 of the RFP, Pfizer aims to \ldblquote ensure all talent [have the] baseline capabilities that meet Pfizer standards.\rdblquote  Are these standards only in the form of job titles and certification/training? Could you provide an example of what a manager could be looking for to better create filters for the solution.\~\tab\tab Filters based on Roles and Status should be available.\par
+MSI\tab  To prevent unauthorized entities from viewing the data, what authentication methods are Pfizer using in their current systems?\~\~\tab\tab For this app, the UI should be protected by basic authentication (username and password), for the API endpoints they should be protected using OAuth2 (bearer token) with a Client ID and Secret key.\par
+MSI\tab What are some of the Pfizer branding guidelines we should be privy to?\~\~\~\tab\tab We will provide a PowerPoint tempalte with the Corporate branding. \par
+MSI\tab In section 3.2.4 as part of the presentation requirements it notes the following:\~\~\tab\tab Not sure what this means, I think the question has been cutoff.\par
+MSI\tab Based on what was shared at the kickoff meeting, the talent data exists in different databases across the organization. When we receive the sample data, will it be shared in multiple CSV\rquote s, or will they already \tab\tab Just 1 HR CSV file needs to be imported and processed on a montly basis.\par
+JAKY\tab What type of security clearance/level of authorization should be required to access the system?\tab\tab Administrators can do everything, in addition to give Managers access. Managers can add/edit/delete related data.\par
+JAKY\tab Are there any special circumstances or contentious issues that we should be aware of?\tab\tab The HR file import process has to be accurate. For example, if a resource is in the file in January but NOT in February, this resource should be set as inactive within the app.\par
+JAKY\tab What is your existing system like and how will the proposed solution be integrated?\tab\tab No integration are required with Pfizer's internal systems.\par
+JAKY\tab Are there any style guides we should follow?\tab\tab We will provide a PowerPoint tempalte with the Corporate branding. \par
+JAKY\tab Are there any out of the box solutions you considered before going the custom route?\tab\tab We did look at Kaleida - {{\field{\*\fldinst{HYPERLINK https://www.kaleida.team/ }}{\fldrslt{https://www.kaleida.team/\ul0\cf0}}}}\f1\fs32\par
+JAKY\tab Who are the end users and what are their needs?\tab\tab Primary Users are Resource Managers for their teams.\par
+JAKY\tab What is the estimated number of users or people who have access to the application?\tab\tab About 100 end-users with 4000 individual resources\par
+G33K3D\tab What is your current catalog solution?\tab\tab We do not have one, hence this RFP.\par
+G33K3D\tab How do new employees edit and move their personal data as they transition across projects\tab\tab This is not happening today.\par
+G33K3D\tab How much does it cost to maintain the current talent catalogue\tab\tab We do not have one, hence this RFP.\par
+G33K3D\tab Are there any specific aesthetic preferences you would like to see in the solution?\tab\tab We will provide a PowerPoint tempalte with the Corporate branding. \par
+G33K3D\tab According to section 5.1 of the RFP, we will be provided sample data during the delivery phase. Will this be post the solutions presentations or sooner?\tab\tab We can provide a sample HR feed with dummy data at any point. The RFP Appendix has the file layout.\par
+G33K3D\tab We understand that there are six towers. Within those towers they each will utilize this solution with three levels: User/Admin and Super Admin authorization. Is that correct?\tab\tab Yes, same level of access for all towers across the Commercial organization.\par
+G33K3D\tab How often will our mentors be available for status check-ins? \tab\tab To be determined by each mentor and their respective teams.\par
+G33K3D\tab How many characters do you use for EmployeeID? Is it alphanumeric, integers or simply letters? I.g. (#00AAAA, #000000, or FirstName_LastName)\tab\tab Colleague IDs are numeric.\f0\lang9\par
+}
+ 

@@ -1,0 +1,28 @@
+// swapPairs
+// function to swap every pair of elements in an array with it's neighbor
+// i.e. element at index 0 is swapped with element at index 1,
+// element at index 2 is swapped with element at index 3, etc.
+// this function should work with the array in-place - don't create a new array!
+
+function swapPairs(arr) {
+  var swapPairs = [arr[0], arr[1], arr[2], arr [3]]; 
+  var swapped = [swapPairs[1], swapPairs[0], swapPairs[3], swapPairs[2]];
+
+  // function should return the same array given as an argument
+  return arr; 
+}
+
+// test cases - don't modify code below this line!
+// will print out the output of the function along with what it -should- look like
+
+var input1 = [1, 2, 3, 4, 5, 6];
+console.log("Function outputs " + swapPairs(input1));
+console.log("Function should output 2, 1, 4, 3, 6, 5");
+
+var input2 = [21, 43, 67, 43, 912];
+console.log("Function outputs " + swapPairs(input2));
+console.log("Function should output 43, 21, 43, 67, 912");
+
+var input3 = ["red", "blue", "green", "yellow"];
+console.log("Function outputs " + swapPairs(input3));
+console.log("Function should output 'blue', 'red', 'yellow', 'green'");

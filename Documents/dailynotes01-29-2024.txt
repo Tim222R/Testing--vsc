@@ -1,0 +1,22 @@
+Git Hub
+Git is a version control system that helps you manage and track changes to your files and collaborate with others on software development projects. It's like a time machine for your code that allows you to keep track of every change, revert to earlier versions, and work on unique features simultaneously without messing things up.
+
+Here are some key concepts to understand Git:
+
+· Repository (Repo): A Git repository is like a folder that holds all the files and history for a project. It's where Git stores every version of your files.
+
+· Commit: A commit is like a snapshot of your project at a specific point in time. You make commits to save your changes and give each commit a descriptive message to explain what you did.
+
+· Branch: A branch is a separate line of development within a repository. You can create branches to work on new features or bug fixes without affecting the main project until you're ready.
+
+· Merge: Merging is the process of combining changes from one branch (usually a feature branch) into another (often the main branch) to incorporate new features or bug fixes.
+
+· Clone: Cloning is creating a copy of a Git repository on your local computer. It allows you to work on the project locally and push your changes back to the remote repository when you're ready.
+
+· Pull: Pulling is the process of getting the latest changes from a remote repository (like GitHub or GitLab) to your local repository.
+
+· Push: Pushing is sending your local commits to a remote repository so that others can see and use your changes.
+
+· Pull Request (PR): In many Git hosting platforms like GitHub, a pull request is a way to propose changes to a project. It allows others to review your changes before they are merged into the main branc
+
+https://github.com/Tim222R/HotOffTheInternet.git
